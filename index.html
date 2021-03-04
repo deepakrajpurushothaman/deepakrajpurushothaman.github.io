@@ -63,11 +63,198 @@
     </div>
   </header>
   <body>   
-  <h2>Contact</h2>
-<p>Email: <a href="mailto:deepak.purushothaman@rwth-aachen.de">deepak.purushothaman@rwth-aachen.de</a></p>
-  </body>
-  <footer>
-    <hr>
-    <code>copyright (c) 2020 Deepak Raj Purushothaman </code>
-  </footer>
+    <p id="copyright-statement" class="copyright text-muted small">Copyright &copy; Deepak Raj Purushothaman <script type="text/javascript">
+        var d = new Date()
+        document.write(d.getFullYear())
+        </script>.</p>
 
+    </div>
+    <!-- /.container -->
+
+  </aside>
+  <!-- /.banner -->
+
+  <!-- Footer -->
+  <!-- <footer>
+    <div class="container">
+        <ul class="list-inline">
+          <li class="list-inline-item">
+            <a href="#">Home</a>
+          </li>
+          <li class="footer-menu-divider list-inline-item">&sdot;</li>
+          <li class="list-inline-item">
+            <a href="#about">About</a>
+          </li>
+          <li class="footer-menu-divider list-inline-item">&sdot;</li>
+          <li class="list-inline-item">
+            <a href="#education">Services</a>
+          </li>
+          <li class="footer-menu-divider list-inline-item">&sdot;</li>
+          <li class="list-inline-item">
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+    <p class="copyright text-muted small">Copyright &copy; <script type="text/javascript">
+      var d = new Date()
+      document.write(d.getFullYear())
+      </script></p>
+  </footer> -->
+
+
+  <script>
+    $(document).ready(function () {
+      var scroll_start = $(this).scrollTop();
+      var startchange1 = $('#education2');
+      var offset1 = startchange1.offset();
+      if (scroll_start > offset1.top && $(window).width() < 768) {
+          $('.navbar').css('background-color', 'transparent');
+          $('.collapse').css('background-color', 'transparent');
+          $('.collapse').css('padding', '0px');
+          $('.navbar').css('background-color', 'rgba(255, 255, 255, 0.9)');
+          $('.collapse').css('padding', '10px');
+        }
+        else if ($(window).width() < 768) {
+          $('.navbar').css('background-color', 'transparent');
+          $('.collapse').css('background-color', 'transparent');
+          $('.collapse').css('padding', '0px');
+          $('.collapse').css('background-color', 'rgba(255, 255, 255, 0.6)');
+          $('.collapse').css('padding', '10px');
+          
+        }
+        else if (scroll_start > offset1.top) {
+          $('.navbar').css('background-color', 'transparent');
+          $('.collapse').css('background-color', 'transparent');
+          $('.collapse').css('padding', '0px');
+          $('.navbar').css('background-color', 'rgba(255, 255, 255, 0.9)');
+          $('.collapse').css('padding', '0px');
+        }
+        else {
+          $('.navbar').css('background-color', 'transparent');
+          $('.collapse').css('background-color', 'transparent');
+          $('.collapse').css('padding', '0px');
+        }
+      /* var startchange2 = $('#skills');
+      var offset2 = startchange2.offset();
+      var startchange3 = $('#experience');
+      var offset3 = startchange3.offset();
+      var startchange4 = $('#projects');
+      var offset4 = startchange4.offset();
+      var startchange5 = $('#extracurriculars');
+      var offset5 = startchange5.offset(); */
+      
+      $(document).scroll(function () {
+        scroll_start = $(this).scrollTop();
+
+        /* if (scroll_start > offset5.top) {
+          $('.navbar').css('background-color', 'rgba(255, 255, 255, 0.9)');
+        } else if (scroll_start > offset4.top) {
+          $('.navbar').css('background-color', 'rgba(248, 248, 248, 0.9)');
+        } else if (scroll_start > offset3.top) {
+          $('.navbar').css('background-color', 'rgba(255, 255, 255, 0.9)');
+        } else if (scroll_start > offset2.top) {
+          $('.navbar').css('background-color', 'rgba(248, 248, 248, 0.9)');
+        } else */ 
+        if (scroll_start > offset1.top && $(window).width() < 768) {
+          $('.navbar').css('background-color', 'transparent');
+          $('.collapse').css('background-color', 'transparent');
+          $('.collapse').css('padding', '0px');
+          $('.navbar').css('background-color', 'rgba(255, 255, 255, 0.9)');
+          $('.collapse').css('padding', '10px');
+        }
+        else if ($(window).width() < 768) {
+          $('.navbar').css('background-color', 'transparent');
+          $('.collapse').css('background-color', 'transparent');
+          $('.collapse').css('padding', '0px');
+          $('.collapse').css('background-color', 'rgba(255, 255, 255, 0.6)');
+          $('.collapse').css('padding', '10px');
+          
+        }
+        else if (scroll_start > offset1.top) {
+          $('.navbar').css('background-color', 'transparent');
+          $('.collapse').css('background-color', 'transparent');
+          $('.collapse').css('padding', '0px');
+          $('.navbar').css('background-color', 'rgba(255, 255, 255, 0.9)');
+          $('.collapse').css('padding', '0px');
+        }
+        else {
+          $('.navbar').css('background-color', 'transparent');
+          $('.collapse').css('background-color', 'transparent');
+          $('.collapse').css('padding', '0px');
+        }
+      });
+    });
+  </script>
+
+  <script>
+  jQuery(function($){
+    var windowWidth = $(window).width();
+    var windowHeight = $(window).height();
+  
+    $(window).resize(function() {
+      var scroll_start = 0;
+      var startchange1 = $('#education2');
+      var offset1 = startchange1.offset();
+      scroll_start = $(this).scrollTop();
+      if(windowWidth != $(window).width() || windowHeight != $(window).height()) {
+        if (scroll_start > offset1.top && $(window).width() < 768) {
+          $('.navbar').css('background-color', 'transparent');
+          $('.collapse').css('background-color', 'transparent');
+          $('.collapse').css('padding', '0px');
+          $('.navbar').css('background-color', 'rgba(255, 255, 255, 0.9)');
+          $('.collapse').css('padding', '10px');
+        }
+        else if($(window).width() < 768) {
+          $('.navbar').css('background-color', 'transparent');
+          $('.collapse').css('background-color', 'transparent');
+          $('.collapse').css('padding', '0px');
+          $('.collapse').css('background-color', 'rgba(255, 255, 255, 0.6)');
+          $('.collapse').css('padding', '10px');
+        }
+        else if (scroll_start > offset1.top) {
+          $('.navbar').css('height', '55px');
+          $('.navbar').css('background-color', 'rgba(255, 255, 255, 0.9)');
+        }
+        else {
+          $('.navbar').css('height', '55px');
+          $('.navbar').css('background-color', 'transparent');
+          $('.collapse').css('background-color', 'transparent');
+          $('.collapse').css('padding', '0px');
+        }
+        return;
+      }
+    });
+  });
+  </script>
+
+  <script src="scroll.js"></script>
+
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+    crossorigin="anonymous"></script>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    
+      ga('create', 'UA-106354611-1', 'auto');
+      ga('send', 'pageview');
+    
+    </script>
+
+<script>
+    $(document).on('click','.collapse',function(e) {
+    if( $(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle' ) {
+        $(this).collapse('hide');
+    }
+});
+
+    </script>
+</body>
+
+</html>
