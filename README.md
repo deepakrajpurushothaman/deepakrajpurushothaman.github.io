@@ -1,1 +1,8 @@
- HTML5/CSS3, Bootstrap 4, Start Bootstrap - Landing Page.
+ Tech Stack:
+ 
+ HTML5/CSS3
+ Bootstrap 4
+ jQuery
+ Popper 
+ 
+ - Landing Page.
